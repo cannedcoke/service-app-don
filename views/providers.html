@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/providers.css">
+
+  <!-- SEO -->
+  <meta name="description" content="Registrate como proveedor en Don y ofrecé tus servicios a miles de usuarios." />
+  <meta name="theme-color" content="#111318" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Registro de Proveedores — Don" />
+  <meta property="og:description" content="Sumate como proveedor y empezá a recibir clientes." />
+  <meta property="og:type" content="website" />
+
+  <title>Registro de Proveedores — Don</title>
+  <link rel="icon" href="../images/favicon.jpg" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+        <a href="../index.html" class="logo" aria-label="Don — Inicio">
+          <img src="../images/favicon.jpg" alt="Don logo" class="logo-mark">
+          Don
+        </a>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./recomendaciones.html">Proveedores</a></li>
+          <li><a href="../aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="header-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 32" preserveAspectRatio="none">
+        <path d="M0,32 L0,16 C240,0 480,32 720,16 C960,0 1200,32 1440,16 L1440,32 Z" fill="#111318"/>
+      </svg>
+    </div>
+  </header>
+
+
+  <!-- MAIN -->
+  <main>
+    <section id="registro-proveedor" aria-labelledby="form-heading">
+
+      <div class="form-container">
+        <h1 id="form-heading">Registrate como proveedor</h1>
+        <p class="form-subtitle">Completá tus datos para empezar a ofrecer servicios</p>
+
+        <form action="#" method="post" id="provider_form">
+
+          <div class="form-group">
+            <label for="name_input">Nombre</label>
+            <input type="text" name="name" id="name_input" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email_input">Email</label>
+            <input type="email" name="email" id="email_input" placeholder="tu@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telephone_input">Teléfono</label>
+            <input type="tel" name="telephone" id="telephone_input" placeholder="Ej: 0981 123456" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject_input">Servicio</label>
+            <select name="subject" id="subject_input" required>
+              <option value="" disabled selected>Seleccioná tu servicio</option>
+              <option>Electricista</option>
+              <option>Plomero</option>
+              <option>Técnico</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message_input">Descripción</label>
+            <textarea name="message" id="message_input" rows="5" placeholder="Contá qué servicio ofrecés" required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" id="form_button">Enviar solicitud</button>
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Don. Todos los derechos reservados.</p>
+    <nav aria-label="Navegación del pie de página">
+      <ul>
+        <li><a href="./aboutUs.html#terminos">Términos y condiciones</a></li>
+        <li><a href="./aboutUs.html#privacidad">Política de privacidad</a></li>
+        <li><a href="./aboutUs.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="../js/providers.js"></script>
+</body>
+</html>

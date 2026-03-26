@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css?v=2">
+    <link rel="stylesheet" href="../css/recomendaciones.css?v=2">
+    <meta name="description" content="Explorá proveedores verificados en Don. Filtrá por categoría, leé reseñas reales y contactá al profesional ideal para tu necesidad." />
+    <meta name="theme-color" content="#111318" />
+    <meta property="og:title" content="Proveedores — Don" />
+    <meta property="og:description" content="Encontrá profesionales verificados en todas las categorías de servicios." />
+    <meta property="og:type" content="website" />
+    <title>Proveedores — Don</title>
+    <link rel="icon" href="../images/favicon.jpg" />
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+
+      <div class="header-inner">
+
+        <a href="../index.html" class="logo" aria-label="Don — Inicio">
+          <img src="../images/favicon.jpg" alt="Don logo" class="logo-mark">
+          Don
+        </a>
+
+        <nav class="site-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="./listado.html" class="active">Proveedores</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="header-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,32 L0,16 C240,0 480,32 720,16 C960,0 1200,32 1440,16 L1440,32 Z" fill="#111318"/>
+        </svg>
+      </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+      <section id="listado" aria-labelledby="listado-heading">
+
+        <!-- Encabezado de sección -->
+          <div class="form-group">
+            <label for="subject_input">Servicio</label>
+            <select name="subject" id="subject_input" required>
+              <option value="" disabled selected>Seleccioná tu servicio</option>
+              <option>Electricidad</option>
+              <option>Pintura</option>
+              <option>Limpieza</option>
+              <option>Carpintería</option>
+              <option>Diseño gráfico</option>
+              <option>Otro</option>
+            </select>
+          </div>
+        <div class="listado-header">
+          <div>
+            <h1 id="listado-heading">Proveedores disponibles</h1>
+            <p class="listado-subtitulo">
+              Profesionales verificados listos para ayudarte
+            </p>
+          </div>
+          <p class="listado-contador" aria-live="polite" id="contador">
+            <!-- JS inyecta: "12 proveedores encontrados" -->
+          </p>
+        </div>
+
+        <!-- Estado de carga -->
+        <div class="listado-loading" id="loading" aria-label="Cargando proveedores">
+          <span class="loading-dot"></span>
+          <span class="loading-dot"></span>
+          <span class="loading-dot"></span>
+        </div>
+
+        <!-- Estado de error -->
+        <p class="listado-error" id="error" hidden>
+          No pudimos cargar los proveedores. Por favor, intentá de nuevo más tarde.
+        </p>
+
+        <!-- Grid de tarjetas — JS inyecta los <article> acá -->
+        <div
+          class="tarjetas-grid"
+          id="tarjetas-grid"
+          role="list"
+          aria-label="Listado de proveedores"
+        ></div>
+
+      </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 Don. Todos los derechos reservados.</p>
+      <nav aria-label="Navegación del pie de página">
+        <ul>
+          <li><a href="./aboutUs.html#terminos">Términos y condiciones</a></li>
+          <li><a href="./aboutUs.html#privacidad">Política de privacidad</a></li>
+          <li><a href="./aboutUs.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </footer>
+      <script>
+        const colors = ['#f5c800','#7b9fff','#e8568a','#8b5cf6','#ffffff'];
+        for (let i = 0; i < 80; i++) {
+          const p = document.createElement('div');
+          p.className = 'particle';
+          const size = Math.random() * 3 + 1;
+          p.style.cssText = `
+            width:${size}px; height:${size}px;
+            left:${Math.random()*100}%;
+            background:${colors[Math.floor(Math.random()*colors.length)]};
+            animation-duration:${Math.random()*6+4}s;
+            animation-delay:${Math.random()*2}s;
+          `;
+          document.body.appendChild(p);
+        }
+      </script>
+    <script src="../js/recomendaciones.js"></script>
+  </body>
+</html>
