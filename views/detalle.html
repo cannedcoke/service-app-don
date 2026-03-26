@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css?v=2">
+    <link rel="stylesheet" href="../css/recomendaciones.css?v=2">
+    <link rel="stylesheet" href="../css/detalle.css?v=1">
+    <link rel="icon" href="../images/favicon.jpg" />
+    <title>Detalle — Don</title>
+  </head>
+  <body>
+
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a href="../index.html" class="logo" aria-label="Don — Inicio">
+          <img src="../images/favicon.jpg" alt="Don logo" class="logo-mark">
+          Don
+        </a>
+        <nav class="site-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="./recomendaciones.html">Proveedores</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,32 L0,16 C240,0 480,32 720,16 C960,0 1200,32 1440,16 L1440,32 Z" fill="#111318"/>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <div class="detalle-wrapper">
+
+        <a href="./recomendaciones.html" class="detalle-back">
+          <svg viewBox="0 0 16 16" fill="none" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Volver a proveedores
+        </a>
+
+        <div class="listado-loading" id="loading">
+          <span class="loading-dot"></span>
+          <span class="loading-dot"></span>
+          <span class="loading-dot"></span>
+        </div>
+
+        <p class="listado-error" id="error" hidden>
+          No pudimos encontrar este proveedor.
+        </p>
+
+        <div id="detalle-content" hidden></div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Don. Todos los derechos reservados.</p>
+      <nav aria-label="Navegación del pie de página">
+        <ul>
+          <li><a href="./aboutUs.html#terminos">Términos y condiciones</a></li>
+          <li><a href="./aboutUs.html#privacidad">Política de privacidad</a></li>
+          <li><a href="./aboutUs.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="../js/detalle.js"></script>
+  </body>
+</html>

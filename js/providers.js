@@ -1,0 +1,18 @@
+    const providerForm = document.getElementById("provider_form")
+    providerForm.addEventListener("submit", async(e) =>{
+        e.preventDefault()
+      
+        const nombre = document.getElementById("name_input").value;
+        const email = document.getElementById("email_input").value;
+        const telefono = document.getElementById("telephone_input").value;
+        const categoria = document.getElementById('subject_input').value;
+        const descripcion = document.getElementById("message_input").value
+        const message = `Nombre: ${nombre}%0ATeléfono: ${telefono}%0AMail: ${email}%0AServicio: ${categoria}%0ADescripción: ${descripcion}`;
+        const whatsappNumber = "595984960221"; 
+        const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+        window.open(url, "_blank");
+       
+
+
+    })
+
