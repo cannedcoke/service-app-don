@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <meta name="description" content="Don es el marketplace donde encontrás profesionales verificados para cualquier servicio que necesitás." />
+    <meta name="theme-color" content="#111318" />
+    <title>Don — Encontrá el profesional que necesitás</title>
+    <link rel="icon" href="./images/favicon.jpg" />
+  </head>
+  <body>
+
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a href="#inicio" class="logo" aria-label="Don — Inicio">
+          <img src="./images/favicon.jpg" alt="Don logo" class="logo-mark">
+          Don
+        </a>
+        <nav class="site-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="./views/recomendaciones.html">Proveedores</a></li>
+            <li><a href="./views/aboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,32 L0,16 C240,0 480,32 720,16 C960,0 1200,32 1440,16 L1440,40 Z" fill="#111318"/>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- HERO -->
+      <section id="inicio" aria-labelledby="hero-heading">
+        <div class="hero-inner">
+
+          <div class="hero-eyebrow">
+            <span class="hero-badge">
+              <span class="badge-dot"></span>
+              Paraguay · 2026
+            </span>
+          </div>
+
+          <h1 id="hero-heading">
+            Encontrá el<br>
+            <em>profesional</em><br>
+            que necesitás
+          </h1>
+
+          <p class="hero-sub">
+            <strong>Don</strong> conecta personas con proveedores verificados
+            en todas las categorías — sin llamadas interminables, sin incertidumbre.
+          </p>
+
+          <div class="cta-group">
+            <a href="./views/recomendaciones.html" class="btn-primary">
+              Buscá un servicio
+              <svg viewBox="0 0 16 16" fill="none" width="14" height="14">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="./views/providers.html" class="btn-ghost">Ser proveedor</a>
+          </div>
+
+          <!-- Floating feature pills -->
+          <div class="hero-pills" aria-hidden="true">
+            <span class="pill">⚡ Electricistas</span>
+            <span class="pill">🔧 Plomeros</span>
+            <span class="pill">🎨 Pintores</span>
+            <span class="pill">🪣 Limpieza</span>
+            <span class="pill">🪚 Carpintería</span>
+            <span class="pill">✏️ Diseño</span>
+            <span class="pill">  y más</span>
+          </div>
+
+        </div>
+
+        <!-- Big decorative number -->
+        <div class="hero-deco" aria-hidden="true">DON</div>
+      </section>
+
+      <!-- STATS STRIP -->
+      <div class="stats-strip">
+        <div class="stat-item">
+          <span class="stat-n" id="hp-proveedores">—</span>
+          <span class="stat-l">Proveedores</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-n" id="hp-categorias">—</span>
+          <span class="stat-l">Categorías</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-n" id="hp-resenas">—</span>
+          <span class="stat-l">Reseñas reales</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-n">🇵🇾</span>
+          <span class="stat-l">Hecho en Paraguay</span>
+        </div>
+      </div>
+
+      <!-- HOW IT WORKS -->
+      <section class="how-section">
+        <div class="how-inner">
+          <div class="section-label">Cómo funciona</div>
+          <h2>Tres pasos.<br>Un profesional.</h2>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-num">01</div>
+              <h3>Elegí la categoría</h3>
+              <p>Filtrá por tipo de servicio — electricidad, plomería, diseño, limpieza y más.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">02</div>
+              <h3>Comparás proveedores</h3>
+              <p>Leé reseñas reales, mirá calificaciones y elegís al profesional con confianza.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">03</div>
+              <h3>Contactás directo</h3>
+              <p>Llamá o escribí por WhatsApp al instante. Sin intermediarios, sin demoras.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOR PROVIDERS -->
+      <section id="proveedores">
+        <div class="provider-inner">
+          <div class="provider-text">
+            <div class="section-label">Para profesionales</div>
+            <h2>¿Ofrecés servicios?<br>Sumate gratis.</h2>
+            <p>Llegá a miles de personas que buscan exactamente lo que ofrecés. Registrate y empezá a recibir clientes hoy.</p>
+            <a href="./views/providers.html" class="btn-primary">
+              Quiero ser proveedor
+              <svg viewBox="0 0 16 16" fill="none" width="14" height="14">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="provider-visual" aria-hidden="true">
+            <div class="pv-card">
+              <div class="pv-avatar">HZ</div>
+              <div>
+                <p class="pv-name">Hector Zárate</p>
+                <span class="pv-cat">Electricidad</span>
+              </div>
+              <div class="pv-stars">★★★★★</div>
+            </div>
+            <div class="pv-card pv-card--offset">
+              <div class="pv-avatar pv-avatar--2">AT</div>
+              <div>
+                <p class="pv-name">Ana Torres</p>
+                <span class="pv-cat">Limpieza</span>
+              </div>
+              <div class="pv-stars">★★★★★</div>
+            </div>
+            <div class="pv-card pv-card--offset2">
+              <div class="pv-avatar pv-avatar--3">VR</div>
+              <div>
+                <p class="pv-name">Valeria Rojas</p>
+                <span class="pv-cat">Diseño gráfico</span>
+              </div>
+              <div class="pv-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Don. Todos los derechos reservados.</p>
+      <nav aria-label="Navegación del pie de página">
+        <ul>
+          <li><a href="./views/aboutUs.html#terminos">Términos y condiciones</a></li>
+          <li><a href="./views/aboutUs.html#privacidad">Política de privacidad</a></li>
+          <li><a href="./views/aboutUs.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script>
+      // Particles
+      const colors = ['#f5c800','#7b9fff','#e8568a','#8b5cf6','#ffffff'];
+      for (let i = 0; i < 60; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        const size = Math.random() * 2.5 + 1;
+        p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${Math.random()*8+5}s;animation-delay:${Math.random()*4}s;`;
+        document.body.appendChild(p);
+      }
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
