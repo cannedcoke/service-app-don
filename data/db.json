@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hector Zarate",
+    "categoria": "Electricidad",
+    "calificacion": 5.0,
+    "resenas": 134,
+    "telefono": "+595983391281"
+  },
+  {
+    "id": 2,
+    "nombre": "Laura Giménez", 
+    "categoria": "Electricidad",
+    "calificacion": 4.5,
+    "resenas": 87,
+    "telefono": "+595981000002"
+  },
+  {
+    "id": 3,
+    "nombre": "Diego Fernández",
+    "categoria": "Pintura",
+    "calificacion": 4.0,
+    "resenas": 52,
+    "telefono": "+595981000003"
+  },
+  {
+    "id": 4,
+    "nombre": "Ana Torres",
+    "categoria": "Limpieza",
+    "calificacion": 4.9,
+    "resenas": 210,
+    "telefono": "+595981000004"
+  },
+  {
+    "id": 5,
+    "nombre": "Roberto Sosa",
+    "categoria": "Carpintería",
+    "calificacion": 3.5,
+    "resenas": 29,
+    "telefono": "+595981000005"
+  },
+  {
+    "id": 6,
+    "nombre": "Valeria Rojas",
+    "categoria": "Diseño gráfico",
+    "calificacion": 5.0,
+    "resenas": 61,
+    "telefono": "+595981000006"
+  },
+    {
+    "id": 7,
+    "nombre": "Juan Rojas",
+    "categoria": "Carpintería",
+    "calificacion": 2.0,
+    "resenas": 21,
+    "telefono": "+595981010676"
+  }
+]
