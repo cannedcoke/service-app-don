@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Syne:wght@700;800&family=Playfair+Display:ital@1&family=Space+Mono&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@1,600&family=Cabinet+Grotesk:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <meta name="description" content="Don es el marketplace donde encontrás profesionales verificados para cualquier servicio que necesitás." />
@@ -26,6 +27,11 @@
             <li><a href="./views/aboutUs.html">About Us</a></li>
           </ul>
         </nav>
+          <button class="burger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
       <div class="header-wave" aria-hidden="true">
         <svg viewBox="0 0 1440 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,46 +73,31 @@
             </a>
             <a href="./views/providers.html" class="btn-ghost">Ser proveedor</a>
           </div>
-
-          <!-- Floating feature pills -->
-          <div class="hero-pills" aria-hidden="true">
-            <span class="pill">⚡ Electricistas</span>
-            <span class="pill">🔧 Plomeros</span>
-            <span class="pill">🎨 Pintores</span>
-            <span class="pill">🪣 Limpieza</span>
-            <span class="pill">🪚 Carpintería</span>
-            <span class="pill">✏️ Diseño</span>
-            <span class="pill">  y más</span>
-          </div>
-
         </div>
+        <!-- Floating feature pills -->
+          <div class="hero-pills" aria-hidden="true">
+            <div class="pills-wheel">
+              <span class="pill pill--syne">Electricistas</span>
+              <span class="pill pill--playfair">Plomeros</span>
+              <span class="pill pill--mono">Pintores</span>
+              <span class="pill pill--bebas">Limpieza</span>
+              <span class="pill pill--cormorant">Carpintería</span>
+              <span class="pill pill--dm">Diseño gráfico</span>
+              <!-- duplicate -->
+              <span class="pill pill--syne">Electricistas</span>
+              <span class="pill pill--playfair">Plomeros</span>
+              <span class="pill pill--mono">Pintores</span>
+              <span class="pill pill--bebas">Limpieza</span>
+              <span class="pill pill--cormorant">Carpintería</span>
+              <span class="pill pill--dm">Diseño gráfico</span>
+            </div>
+          </div>
 
         <!-- Big decorative number -->
         <div class="hero-deco" aria-hidden="true">DON</div>
       </section>
 
-      <!-- STATS STRIP -->
-      <div class="stats-strip">
-        <div class="stat-item">
-          <span class="stat-n" id="hp-proveedores">—</span>
-          <span class="stat-l">Proveedores</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-n" id="hp-categorias">—</span>
-          <span class="stat-l">Categorías</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-n" id="hp-resenas">—</span>
-          <span class="stat-l">Reseñas reales</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-n">🇵🇾</span>
-          <span class="stat-l">Hecho en Paraguay</span>
-        </div>
-      </div>
+
 
       <!-- HOW IT WORKS -->
       <section class="how-section">
@@ -176,7 +167,28 @@
           </div>
         </div>
       </section>
-
+      <!-- STATS STRIP -->
+      <div class="stats-strip">
+        <div class="stat-item">
+          <span class="stat-n" id="hp-proveedores">—</span>
+          <span class="stat-l">Proveedores</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-n" id="hp-categorias">—</span>
+          <span class="stat-l">Categorías</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-n" id="hp-resenas">—</span>
+          <span class="stat-l">Reseñas reales</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-n">🇵🇾</span>
+          <span class="stat-l">Hecho en Paraguay</span>
+        </div>
+      </div>
     </main>
 
     <footer>
