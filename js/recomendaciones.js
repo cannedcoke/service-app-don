@@ -65,16 +65,8 @@ function renderizar() {
 }
 
 // --- Populate select dynamically from JSON -------------------
-function poblarSelect(proveedores) {
-  const categorias = [...new Set(proveedores.map(p => p.categoria))].sort();
-  // Keep the placeholder, remove any hardcoded options after it
-  select.querySelectorAll('option:not([disabled])').forEach(o => o.remove());
-  categorias.forEach(cat => {
-    const opt = document.createElement('option');
-    opt.value = cat;
-    opt.textContent = cat;
-    select.appendChild(opt);
-  });
+function poblarSelect() {
+
   // Add "Otro" at the end as a catch-all
   const otro = document.createElement('option');
   otro.value = '';
@@ -97,3 +89,20 @@ fetch('../data/db.json')
   });
 
 select.addEventListener('change', renderizar);
+
+  // Burger menu
+const burger = document.querySelector('.burger');
+const nav    = document.querySelector('.site-nav');
+
+burger.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  burger.setAttribute('aria-expanded', isOpen);
+});
+
+// Close on nav link click
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    burger.setAttribute('aria-expanded', false);
+  });
+});

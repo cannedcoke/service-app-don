@@ -118,3 +118,100 @@ textarea:focus {
     padding: 2.5rem 1.25rem 3.5rem;
   }
 }
+@media (prefers-color-scheme: light) {
+  input,
+  select,
+  textarea {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.12);
+    color: #111318;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: rgba(74, 108, 247, 0.4);
+    background: #ffffff;
+  }
+
+  ::placeholder {
+    color: rgba(17, 19, 24, 0.35);
+  }
+
+  .form-group label {
+    color: rgba(17, 19, 24, 0.5);
+  }
+
+  #form_button {
+    color: #ffffff;
+  }
+}
+
+/* === BURGER ================================================ */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--btn-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  padding: 8px;
+  z-index: 200;
+}
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* Burger open state — X */
+.burger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+.burger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.burger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* Mobile nav open */
+.site-nav.open {
+  display: flex !important;
+  flex-direction: column;
+  position: fixed;
+  top: var(--header-h);
+  left: 0; right: 0;
+  background: var(--bg-header);
+  padding: 1rem 1.25rem 2rem;
+  border-bottom: 1px solid var(--border-card);
+  z-index: 99;
+  animation: nav-drop 0.2s ease;
+}
+
+.site-nav.open ul {
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.site-nav.open a {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+@keyframes nav-drop {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .burger { display: flex; }
+}

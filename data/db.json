@@ -54,5 +54,13 @@
     "calificacion": 2.0,
     "resenas": 21,
     "telefono": "+595981010676"
+  },
+    {
+    "id": 8,
+    "nombre": "haidee Romero",
+    "categoria": "Psicologia",
+    "calificacion": 5.0,
+    "resenas": 21,
+    "telefono": "+595981014456"
   }
 ]

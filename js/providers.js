@@ -16,3 +16,19 @@
 
     })
 
+  // Burger menu
+const burger = document.querySelector('.burger');
+const nav    = document.querySelector('.site-nav');
+
+burger.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  burger.setAttribute('aria-expanded', isOpen);
+});
+
+// Close on nav link click
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    burger.setAttribute('aria-expanded', false);
+  });
+});
