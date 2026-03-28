@@ -50,18 +50,24 @@ let todosLosProveedores = [];
 function renderizar() {
   const seleccion = select.value;
   const filtrados = seleccion
-    ? todosLosProveedores.filter(p => p.categoria.toLowerCase() === seleccion.toLowerCase())
-    : todosLosProveedores;
+  ? todosLosProveedores.filter(p => p.categoria.toLowerCase() === seleccion.toLowerCase())
+  : todosLosProveedores;
 
   grid.innerHTML = '';
   contador.textContent = `${filtrados.length} proveedores encontrados`;
 
+  loading.hidden = false;
+
+  setTimeout(() => {
+  loading.hidden = true;
   if (filtrados.length === 0) {
     grid.innerHTML = `<p style="color:var(--text-muted);font-size:0.9rem;padding:2rem 0">No hay proveedores para esta categoría.</p>`;
     return;
   }
 
-  filtrados.forEach(p => grid.appendChild(crearTarjeta(p)));
+
+    filtrados.forEach(p => grid.appendChild(crearTarjeta(p)));
+  },1000)
 }
 
 // --- Populate select dynamically from JSON -------------------
@@ -78,10 +84,12 @@ function poblarSelect() {
 fetch('../data/db.json')
   .then(r => { if (!r.ok) throw new Error(); return r.json(); })
   .then(proveedores => {
+    setTimeout(()=>{
     todosLosProveedores = proveedores;
     loading.hidden = true;
     poblarSelect(proveedores);
     renderizar();
+    },1000)
   })
   .catch(() => {
     loading.hidden = true;
