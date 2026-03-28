@@ -64,6 +64,7 @@ select,
 textarea {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.85rem;
+  background: rgba(24, 18, 18, 0.595);
   color: var(--text-primary);
   background: var(--bg-card);
   border: 1px solid var(--border-card);
@@ -74,6 +75,9 @@ textarea {
   transition: border 0.15s ease, background 0.15s ease;
 }
 
+select#subject_input{
+  background-color: var(--bg-card);
+}
 input:focus,
 select:focus,
 textarea:focus {
