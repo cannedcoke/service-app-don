@@ -23,7 +23,7 @@ function crearTarjeta(p) {
   article.setAttribute('role', 'listitem');
   article.innerHTML = `
     <div class="tarjeta-header">
-      <div class="tarjeta-avatar" aria-hidden="true">${iniciales(p.nombre)}</div>
+      <div class="tarjeta-avatar" aria-hidden="true">${iniciales(p.nombre)} </div>
       <div class="tarjeta-info">
         <p class="tarjeta-nombre">${p.nombre}</p>
         <span class="tarjeta-categoria">${p.categoria}</span>
