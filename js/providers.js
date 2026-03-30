@@ -11,7 +11,11 @@
         const whatsappNumber = "595984960221"; 
         const url = `https://wa.me/${whatsappNumber}?text=${message}`;
         window.open(url, "_blank");
-        alert("Gracias por aplicar! nos contactaremos con usted shortly(change this)")
+        
+        alert("¡Gracias por aplicar! Nos contactaremos con usted a la brevedad.");
+
+        providerForm.reset()
+        
         // also on send clear the inputs
        
 
