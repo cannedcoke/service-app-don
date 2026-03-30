@@ -255,12 +255,13 @@
 }
 
 .step-num {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Mono', monospace;
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 1px rgba(107, 140, 255, 0.25);
   line-height: 1;
+  letter-spacing: -0.03em;
 }
 
 .step-card h3 {
